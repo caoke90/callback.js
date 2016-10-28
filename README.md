@@ -3,6 +3,7 @@
 ##use demo for jquery
 
 ***
+```javascript
 var define= $.define
 var require= $.require
 define("a",[function(a){
@@ -26,4 +27,5 @@ define("c",["$callback","a","b",function(callback,a,b){
 require("c",function(c){
     console.log(c)
 })
+```
 ***
