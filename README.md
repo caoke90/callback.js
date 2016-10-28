@@ -2,7 +2,8 @@
 
 ##use demo for jquery
 
-`var define= $.define
+`
+var define= $.define
 var require= $.require
 define("a",[function(a){
     return "a"
