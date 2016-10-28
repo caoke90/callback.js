@@ -2,7 +2,6 @@
 
 ##use demo for jquery
 
-***
 ```javascript
 var define= $.define
 var require= $.require
@@ -28,4 +27,3 @@ require("c",function(c){
     console.log(c)
 })
 ```
-***
