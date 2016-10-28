@@ -5,26 +5,26 @@
 ```javascript
 var define= $.define
 var require= $.require
-define("a",[function(a){
-    return "a"
+define("hello",[function(a){
+    return "hello"
 }])
-define("b",["a","$callback",function(a,callback){
-    console.log(a)
+define("world",["hello","$callback",function(hello,callback){
+    console.log(hello)
     setTimeout(function(){
-        callback("b sync")
+        callback("world")
     },1000)
 
 }])
-define("c",["$callback","a","b",function(callback,a,b){
-    console.log(b)
-    console.log(a)
+define("demo",["$callback","hello","world",function(callback,hello,world){
+    console.log(hello)
+    console.log(world)
     setTimeout(function(){
-        callback("c sync")
+        callback("demo sync")
     },1000)
 
 }])
-require("c",function(c){
-    console.log(c)
+require("demo",function(demo){
+    console.log(demo)
 })
 ```
 
